@@ -1,0 +1,24 @@
+
+
+
+<div>
+  <span><b>hello codonedigest extension</b></span>  
+  <button onclick="myFunction()">Click me</button>
+</div>
+<script>
+  function myFunction() {
+    alert("hello extension");
+  }
+</script>
+
+{% schema %}
+{
+  "name": "codextension",
+  "target": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+
